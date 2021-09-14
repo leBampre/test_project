@@ -9,7 +9,6 @@ class TextBloc with ChangeNotifier {
 
   updateAge(String? value) {
     (value == null || value == "") ? _age = ("no age added!") : _age = value;
-    print(_age);
     notifyListeners();
   }
 
